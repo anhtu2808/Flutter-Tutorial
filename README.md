@@ -1,9 +1,55 @@
 # Flutter-Tutorial
 
 ## 1. Giới thiệu Flutter – Tổng quan & lịch sử Flutter
-- Flutter là gì, ai phát triển
-- Ứng dụng thực tế của Flutter
-- Ưu điểm, hạn chế, lý do nên học
+
+## Flutter là gì, ai phát triển:
+    . Flutter là một framework mã nguồn mở do Google phát triển, được giới thiệu lần đầu vào năm 2017.
+
+    . Dùng để xây dựng ứng dụng đa nền tảng (cross-platform), chỉ cần một codebase duy nhất có thể chạy trên Android, iOS, Web, Desktop và cả thiết bị nhúng.
+
+    . Ngôn ngữ lập trình chính của Flutter là Dart, cũng do Google phát triển.
+
+    . Flutter cung cấp bộ công cụ UI mạnh mẽ, giúp tạo ra giao diện người dùng đẹp, linh hoạt và hiệu năng cao.
+
+## Ứng dụng thực tế của Flutter:
+    . Google Ads: ứng dụng quảng cáo chính thức của Google.
+
+    . Alibaba: sử dụng Flutter cho một phần hệ thống thương mại điện tử.
+
+    . BMW, Toyota, eBay Motors, Reflectly: xây dựng các ứng dụng di động cao cấp.
+
+    . Ở Việt Nam, một số startup và công ty phần mềm đã áp dụng Flutter để phát triển ứng dụng đa nền tảng.
+
+## Ưu điểm:
+    . Phát triển nhanh chóng: Hỗ trợ tính năng Hot Reload, giúp xem ngay kết quả khi thay đổi code mà không cần build lại toàn bộ ứng dụng.
+
+    . Giao diện đồng nhất: Thay vì dùng XML hay HTML để xây dựng giao diện, Flutter dùng Widget — mọi thành phần trong Flutter (nút, văn bản, hình ảnh, bố cục, v.v.) đều là widget.
+
+    . Nhờ có engine đồ họa riêng (Skia), Flutter vẽ trực tiếp giao diện lên màn hình, không phụ thuộc vào thành phần giao diện của hệ điều hành.
+
+    . Hiệu năng cao: Biên dịch trực tiếp sang mã máy (native code), không cần lớp trung gian như React Native → chạy mượt và ổn định.
+
+    . Cộng đồng lớn, thư viện phong phú: Có hàng nghìn package/plugin sẵn có trên pub.dev.
+
+    . Đa nền tảng thực sự: Một codebase duy nhất cho Android, iOS, Web, và Desktop.
+
+## Hạn chế:
+    . Dung lượng ứng dụng lớn hơn so với native do cần gói thêm Flutter engine.
+
+    . Một số API hệ thống chưa được hỗ trợ đầy đủ, đặc biệt trên iOS.
+
+    . Hiệu suất xử lý đồ họa hoặc tác vụ nặng đôi khi kém hơn native.
+
+    . Phụ thuộc vào Google, nếu Google ngừng hỗ trợ, Flutter có thể bị ảnh hưởng.
+ 
+## Lý do nên học Flutter:
+    . Phát triển đa nền tảng với một codebase → tiết kiệm thời gian và chi phí.
+
+    . Nhu cầu tuyển dụng cao, đặc biệt ở các startup và công ty phần mềm hiện nay.
+
+    . Dễ học, đặc biệt với người đã quen lập trình hướng đối tượng (Java, C#, JavaScript).
+
+    . Thiết kế giao diện hiện đại, dễ tùy biến, phù hợp cho cả ứng dụng nhỏ và lớn.
 
 ## 2. So sánh Flutter vs Android Native – Phân tích, đối chiếu
 - So sánh ngôn ngữ (Dart vs Java/Kotlin)
