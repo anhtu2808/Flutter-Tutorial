@@ -308,6 +308,7 @@ class MyApp extends StatelessWidget {
 5. UI luôn phản ánh state hiện tại (reactive).
 
 ## 6. Lập trình demo CRUD – Ứng dụng Flutter cơ bản
-- Tạo app CRUD (VD: Danh bạ / Ghi chú)
-- Thêm, sửa, xóa, xem dữ liệu (List hoặc sqflite)
-- Demo chạy thực tế
+- Ứng dụng Todo App CRUD được phát triển bằng Flutter, cho phép người dùng tạo, chỉnh sửa, xóa, sắp xếp
+- Mỗi công việc có thể chứa tiêu đề, mô tả, địa điểm, hạn chót, mức độ ưu tiên (Priority) và phân loại (Category).
+<img src="image/list_task.png" alt="List task" width="500" height="300">
+<img src="image/edit_task.png" alt="Edit task" width="500" height="300">

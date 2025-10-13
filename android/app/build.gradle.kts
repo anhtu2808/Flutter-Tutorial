@@ -17,10 +17,8 @@ android {
     }
 
     compileOptions {
-        // ✅ Bật hỗ trợ desugar (cho các API Java mới)
         isCoreLibraryDesugaringEnabled = true
 
-        // ✅ Cập nhật version Java lên 11 để tránh cảnh báo
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
