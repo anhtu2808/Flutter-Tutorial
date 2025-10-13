@@ -265,9 +265,96 @@ Hướng dẫn toàn diện về Flutter - từ cơ bản đến nâng cao
    - Nhấn nút Run (biểu tượng play màu xanh)
 
 ## 4. Cú pháp cơ bản trong Dart & Flutter – Giới thiệu ngôn ngữ Dart
-- Cú pháp cơ bản: biến, kiểu dữ liệu, hàm, class, if/for
-- Hàm main(), cấu trúc ứng dụng Flutter
-- Widget cơ bản: Text, Button, Column, Row
+1. Introduction to Dart & Flutter:
+- Dart được Google tạo ra để trở thành một ngôn ngữ hiện đại, dễ đọc, dễ học và mạnh mẽ — nếu bạn đã từng học Java hoặc C#, bạn sẽ thấy cú pháp của Dart rất quen thuộc.
+
+- Ví dụ, trong Java ta viết:
+int age = 20;
+và trong Dart, cú pháp gần như y hệt:
+int age = 20;
+
+- Điều này giúp người mới chuyển từ các ngôn ngữ truyền thống sang Dart rất dễ dàng.
+
+- Dart được tối ưu cho giao diện (UI), nên Flutter chọn Dart làm ngôn ngữ chính để xử lý cả logic và hiển thị.
+Flutter hoạt động theo cơ chế “viết một lần, chạy mọi nơi” — bạn chỉ cần một project, nhưng có thể build ra ứng dụng Android, iOS, web và desktop.
+
+- Thêm vào đó, Flutter có tính năng Hot Reload – khi bạn thay đổi một dòng code, kết quả được cập nhật ngay lập tức trên màn hình mà không cần khởi động lại app.
+- Ví dụ: bạn đổi dòng Text("Hello Flutter") thành Text("Xin chào Flutter"), chỉ cần lưu lại, ứng dụng sẽ đổi ngay dòng chữ trên màn hình.
+- Đây là điểm cực kỳ mạnh mẽ giúp Flutter nổi bật hơn các framework khác như React Native hay Xamarin.
+
+2. Basic Syntax in Dart
+- Dart có cú pháp khá đơn giản và dễ đọc.
+- Khi khai báo biến, bạn có thể dùng kiểu dữ liệu rõ ràng như int, String, hoặc để Dart tự suy luận kiểu bằng var.
+- Ví dụ:
+var city = "Hanoi";
+Trong hai dòng này, Dart sẽ tự hiểu city là String nhờ giá trị "Hanoi".
+- Dart là ngôn ngữ strongly typed – nghĩa là, ngay cả khi bạn không khai báo kiểu, Dart vẫn biết và kiểm tra kiểu dữ liệu.
+ Nếu bạn gán lại city = 10; thì sẽ báo lỗi ngay.
+- Về cấu trúc điều khiển, Dart có cú pháp giống với các ngôn ngữ họ C.
+- Ví dụ:
+if (age > 18) print("Adult");
+
+- Giống hệt như Java hay C#, chỉ khác là Dart cho phép viết ngắn gọn trên một dòng nếu chỉ có một câu lệnh.
+Còn vòng lặp:
+for (int i = 0; i < 5; i++) {
+  print(i);
+}
+
+hoạt động tương tự như các ngôn ngữ khác — in ra các giá trị từ 0 đến 4.
+- Cuối cùng là hàm sayHello:
+void sayHello(String name) {
+  print("Hello $name");
+}
+
+- Ở đây, bạn có thể thấy Dart hỗ trợ string interpolation — tức là có thể chèn biến vào trong chuỗi bằng $name.
+- Ví dụ, nếu gọi sayHello("Anna"), chương trình sẽ in ra “Hello Anna”.
+- Điều này giúp code ngắn gọn và dễ hiểu hơn rất nhiều so với việc phải nối chuỗi như trong Java ("Hello " + name).
+3. Class & Object in Dart:
+- Dart là ngôn ngữ hướng đối tượng, nghĩa là mọi thứ trong Dart đều là object.
+- Trong ví dụ này, ta có một class Student có hai thuộc tính là name và age.
+ Constructor Student(this.name, this.age) là cú pháp rút gọn trong Dart – nó tự động gán giá trị truyền vào cho các thuộc tính tương ứng.
+- Nếu viết theo cách truyền thống như trong Java, ta sẽ phải viết nhiều hơn:
+Student(String name, int age) {
+  this.name = name;
+  this.age = age;
+}
+- Còn Dart chỉ cần một dòng.
+- Phương thức displayInfo() dùng để in ra thông tin sinh viên:
+print("Name: $name, Age: $age");
+
+- Ở đây ta lại thấy cú pháp $variable giúp hiển thị giá trị trực tiếp trong chuỗi — rất tiện lợi.
+Khi chạy hàm main():
+var s1 = Student("Minh", 20);
+s1.displayInfo();
+
+- Chương trình sẽ tạo ra đối tượng Student tên là Minh, 20 tuổi, và in ra màn hình “Name: Minh, Age: 20”.
+- Cách tổ chức như vậy giúp chương trình rõ ràng, có cấu trúc, dễ mở rộng và dễ bảo trì.
+- Ví dụ, nếu sau này bạn muốn thêm phương thức study() hay getAgeInDays(), bạn chỉ cần thêm vào class Student, không ảnh hưởng phần khác.
+
+4. Flutter App Structure & Basic Widgets:
+- Ứng dụng Flutter luôn bắt đầu từ hàm main():
+void main() => runApp(MyApp());
+- Câu lệnh runApp() chính là điểm khởi động ứng dụng, nơi bạn truyền vào một widget gốc — thường là MyApp.
+- MyApp là một StatelessWidget, nghĩa là giao diện này không thay đổi trong suốt vòng đời của nó.
+- Trong hàm build(), ta trả về MaterialApp, đây là widget bao ngoài toàn bộ ứng dụng và giúp áp dụng phong cách Material Design của Google.
+- Bên trong MaterialApp, ta có Scaffold — nó cung cấp cấu trúc cơ bản cho một trang: có AppBar ở trên, body ở giữa.
+- Phần body chứa một Column, dùng để sắp xếp các widget theo chiều dọc.
+- Ở đây, ta có hai widget con:
+Text("Welcome to Flutter!")
+và
+ElevatedButton(
+  onPressed: () {},
+  child: Text("Click Me"),
+)
+
+- Text hiển thị chuỗi ký tự, còn ElevatedButton là nút bấm tương tác.
+- Khi người dùng nhấn nút, bạn có thể xử lý sự kiện trong phần onPressed.
+ Ví dụ, bạn có thể viết:
+onPressed: () {
+  print("Button clicked!");
+}
+- Khi đó, mỗi lần bấm nút sẽ in ra dòng chữ trên console.
+- Với các dòng code cơ bản, bạn đã có một giao diện đơn giản gồm tiêu đề, nội dung và nút bấm — đây chính là điểm mạnh của Flutter: tạo UI nhanh, đẹp và hiệu quả.
 
 ## 5. Cấu trúc dự án Flutter – Giải thích project Flutter
 ### 5.1 Thư mục và file quan trọng
