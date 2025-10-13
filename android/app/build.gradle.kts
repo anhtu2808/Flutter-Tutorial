@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.todo_app"
+    namespace = "com.example.to_do_app_flutter"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.todo_app"
+        applicationId = "com.example.to_do_app_flutter"
         minSdk = flutter.minSdkVersion
         targetSdk = 34
         versionCode = 1
@@ -17,13 +17,17 @@ android {
     }
 
     compileOptions {
+        // ✅ Bật hỗ trợ desugar (cho các API Java mới)
         isCoreLibraryDesugaringEnabled = true
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+
+        // ✅ Cập nhật version Java lên 11 để tránh cảnh báo
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        // ✅ Đồng bộ JVM target với Java 11
+        jvmTarget = "11"
     }
 }
 
