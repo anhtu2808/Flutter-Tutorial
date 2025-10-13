@@ -1,15 +1,24 @@
-# to_do_app_flutter
+# Flutter Tutorial
 
-A new Flutter project.
+Hướng dẫn toàn diện về Flutter - từ cơ bản đến nâng cao
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Mục lục
+1. [Giới thiệu Flutter](#1-giới-thiệu-flutter--tổng-quan--lịch-sử-flutter)
+   - [Flutter là gì, ai phát triển](#flutter-là-gì-ai-phát-triển)
+   - [Ứng dụng thực tế của Flutter](#ứng-dụng-thực-tế-của-flutter)
+   - [Ưu điểm, hạn chế, lý do nên học](#ưu-điểm)
+2. [So sánh Flutter vs Android Native](#2-so-sánh-flutter-vs-android-native--phân-tích-đối-chiếu)
+   - [So sánh ngôn ngữ (Dart vs Java/Kotlin)](#21-so-sánh-ngôn-ngữ-dart-vs-javakotlin)
+   - [Cách build UI (Widget vs XML Layout)](#22-cách-build-ui-widget-flutter-vs-xml-layout-android)
+   - [Tốc độ phát triển, hiệu năng, tính đa nền tảng](#23-tốc-độ-phát-triển-hiệu-năng-và-tính-đa-nền-tảng)
+3. [Cài đặt môi trường & công cụ](#3-cài-đặt-môi-trường--công-cụ--setup-flutter)
+   - [Cài đặt Flutter trên macOS](#31-cài-đặt-flutter-trên-macos)
+   - [Cài đặt Flutter trên Windows](#32-cài-đặt-flutter-trên-windows)
+   - [Cài đặt plugin Flutter vào Android Studio](#33-cài-đặt-plugin-flutter-vào-android-studio)
+   - [Tạo project Flutter bằng Android Studio](#34-tạo-project-flutter-bằng-android-studio)
+4. [Cú pháp cơ bản trong Dart & Flutter](#4-cú-pháp-cơ-bản-trong-dart--flutter--giới-thiệu-ngôn-ngữ-dart)
+5. [Cấu trúc dự án Flutter](#5-cấu-trúc-dự-án-flutter--giải-thích-project-flutter)
+6. [Lập trình demo CRUD](#6-lập-trình-demo-crud--ứng-dụng-flutter-cơ-bản)
 
 ## Ứng dụng thực tế của Flutter:
     . Google Ads: ứng dụng quảng cáo chính thức của Google.
