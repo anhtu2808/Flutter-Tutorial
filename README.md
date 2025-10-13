@@ -252,9 +252,60 @@
 - Widget cơ bản: Text, Button, Column, Row
 
 ## 5. Cấu trúc dự án Flutter – Giải thích project Flutter
-- Thư mục lib, pubspec.yaml, android, ios, assets
-- File main.dart và Widget tree
-- Giải thích luồng chạy ứng dụng
+### 5.1 Thư mục và file quan trọng
+- **lib/**: 
+  - Chứa toàn bộ mã nguồn Dart của ứng dụng.
+  - Trong đó có main.dart là file chính khởi chạy app.
+  - Các file khác thường được chia thành:
+    - screens/: các màn hình (pages)
+    - widgets/: các widget tái sử dụng
+    - models/: các lớp dữ liệu
+    - services/: logic hoặc API call
+- **pubspec.yaml**: 
+  - File cấu hình dự án.
+  - Dùng để khai báo:
+    - Tên, version, mô tả ứng dụng.
+    - Các dependencies (package bên thứ ba).
+    - Thư mục assets (ảnh, font, âm thanh,...).
+- **android/** và **ios/**: 
+  - Chứa mã native tương ứng để build app cho Android và iOS.
+  - Thường ít chỉnh sửa trừ khi cần cấu hình đặc biệt (ví dụ permission hoặc icon app).
+- **assets/**: 
+  - Chứa hình ảnh, font, file JSON... dùng trong app.
+  - Cần khai báo trong pubspec.yaml để Flutter nhận diện.
+
+### 5.2 File main.dart và Widget Tree
+- main.dart là điểm bắt đầu của chương trình.
+  
+```dart
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      home: HomePage(),
+    );
+  }
+}
+```
+
+- Widget Tree:
+  - Mọi thứ trong Flutter là widget (text, button, layout...).
+  - Widget có thể lồng nhau → tạo thành một cây widget (widget tree).
+  - Có hai loại widget:
+    - StatelessWidget: không thay đổi trạng thái.
+    - StatefulWidget: có thể thay đổi khi người dùng tương tác.
+
+### 5.3 Luồng chạy ứng dụng
+1. Chạy `main()`.
+2. `runApp()` khởi tạo widget gốc.
+3. Flutter dựng Widget Tree và gọi `build()`.
+4. Khi state thay đổi → rebuild phần cần thiết.
+5. UI luôn phản ánh state hiện tại (reactive).
 
 ## 6. Lập trình demo CRUD – Ứng dụng Flutter cơ bản
 - Tạo app CRUD (VD: Danh bạ / Ghi chú)
