@@ -161,7 +161,7 @@
   - Các công cụ command-line: bash, curl, git, mkdir, rm, unzip, which
 
 - Các bước cài đặt:
-  1. Tải Flutter SDK từ trang chính thức: https://docs.flutter.dev/get-started/install/macos
+  1. Tải Flutter SDK từ trang chính thức: https://docs.flutter.dev/install/manual
   2. Giải nén file tải về vào thư mục mong muốn (ví dụ: `~/development`)
   3. Thêm Flutter vào PATH (có nhiều cách):
      
@@ -204,7 +204,7 @@
   - Git for Windows
 
 - Các bước cài đặt:
-  1. Tải Flutter SDK từ trang chính thức: https://docs.flutter.dev/get-started/install/windows
+  1. Tải Flutter SDK từ trang chính thức: https://docs.flutter.dev/install/manual
   2. Giải nén file tải về vào thư mục mong muốn (ví dụ: `C:\src\flutter`)
   3. Thêm Flutter vào PATH hệ thống:
      - Tìm kiếm "env" trong Start menu
