@@ -20,6 +20,15 @@ Hướng dẫn toàn diện về Flutter - từ cơ bản đến nâng cao
 5. [Cấu trúc dự án Flutter](#5-cấu-trúc-dự-án-flutter--giải-thích-project-flutter)
 6. [Lập trình demo CRUD](#6-lập-trình-demo-crud--ứng-dụng-flutter-cơ-bản)
 
+## Flutter là gì, ai phát triển:
+    . Flutter là một framework mã nguồn mở do Google phát triển, được giới thiệu lần đầu vào năm 2017.
+
+    . Dùng để xây dựng ứng dụng đa nền tảng (cross-platform), chỉ cần một codebase duy nhất có thể chạy trên Android, iOS, Web, Desktop và cả thiết bị nhúng.
+
+    . Ngôn ngữ lập trình chính của Flutter là Dart, cũng do Google phát triển.
+
+    . Flutter cung cấp bộ công cụ UI mạnh mẽ, giúp tạo ra giao diện người dùng đẹp, linh hoạt và hiệu năng cao.
+
 ## Ứng dụng thực tế của Flutter:
     . Google Ads: ứng dụng quảng cáo chính thức của Google.
 
