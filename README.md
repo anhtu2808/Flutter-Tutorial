@@ -328,5 +328,7 @@ class MyApp extends StatelessWidget {
 ## 6. Lập trình demo CRUD – Ứng dụng Flutter cơ bản
 - Ứng dụng Todo App CRUD được phát triển bằng Flutter, cho phép người dùng tạo, chỉnh sửa, xóa, sắp xếp
 - Mỗi công việc có thể chứa tiêu đề, mô tả, địa điểm, hạn chót, mức độ ưu tiên (Priority) và phân loại (Category).
-<img src="image/list_task.png" alt="List task" width="500" height="300">
-<img src="image/edit_task.png" alt="Edit task" width="500" height="300">
+<div align="center">
+  <img src="image/list_task.png" alt="List task" width="300" height="600" style="padding-right: 10px;">
+  <img src="image/edit_task.png" alt="Edit task" width="300" height="600">
+</div>
